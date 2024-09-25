@@ -1,0 +1,6 @@
+**/*.psd
+**/*.pdf
+**/*.ai
+**/data/
+
+.vscode/
