@@ -152,6 +152,7 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  min-width: 150px;
 }
 
 .header .logo img {
@@ -461,7 +462,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 0px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -1180,9 +1181,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+/* .starter-section {
+  Add your styles here
+} */
 
 /*--------------------------------------------------------------
 # Contact Section

@@ -27,6 +27,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css?ver=<?php echo time(); ?>" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: MyPortfolio
@@ -43,35 +44,89 @@
     <div class="container-fluid  position-relative d-flex align-items-center justify-content-between">
 
       <style type="text/css">
-        .st0{fill:#BE1E2D; display: none;}
+
+        #Layer_1{display: none;}
+        
+        @media (max-width:512px) {
+          #Layer_1{display: block;}
+          #Layer_2{display: none;}
+        }
+        /* .st0{fill:#BE1E2D; display: none;}
         @media (max-width:512px) {
           .st0{display: block;}          
-          .logo svg path:not(.st0){display: none;}
-          /* 제외..선택자?
-                해석: .logo 안의 svg 안의 path들 중에서 .st0 빼고 전부 선택
-          */
-        }
+          .logo svg path:not(.st0){display: none;} 
+        } */
+        /* 제외..선택자?
+              해석: .logo 안의 svg 안의 path들 중에서 .st0 빼고 전부 선택 */
       </style>
 
-      <a href="index.html" class="logo d-flex align-items-center col-2 border ms-4 mt-3">
+      <a href="index.html" class="logo d-flex align-items-center col-1 ms-4 mt-3">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <!-- svg 이미지소스로 쓰이기 위해서는 반드시 html5 -->
           <!-- <img src="./logo.svg" alt="logo"> -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 102.8 24.3" style="enable-background:new 0 0 102.8 24.3;" xml:space="preserve">
-<g>
-	<path d="M10.3,6c0,3.8,0.4,6.8,1.2,8.8c0.8,2,1.9,3.2,3.4,3.8L13,23.4c-1-0.2-2-0.6-2.9-1.4c-1-0.8-1.8-1.8-2.6-3.2
-		c-0.8,1.3-1.7,2.4-2.7,3.2c-1,0.8-2,1.3-2.9,1.4L0,18.6c1.5-0.5,2.6-1.8,3.4-3.8c0.8-2,1.2-4.9,1.2-8.8V0.3h5.7V6z M24.8,9.6h-2.4
-		v4.8h2.4v4.8h-2.4v5.1h-6V0h6v4.8h2.4V9.6z"/>
-	<path d="M49.8,23.4H26.7v-4.8h23.1V23.4z M27.4,14.7V0.3h6v2.4h9.8V0.3h6v14.4H27.4z M43.2,7.5h-9.8v2.4h9.8V7.5z"/>
-	<path d="M63.3,6c0,3.8,0.4,6.8,1.2,8.8c0.8,2,1.9,3.2,3.4,3.8L66,23.4c-1-0.2-2-0.6-2.9-1.4c-1-0.8-1.8-1.8-2.6-3.2
-		c-0.8,1.3-1.7,2.4-2.7,3.2c-1,0.8-2,1.3-2.9,1.4L53,18.6c1.5-0.5,2.6-1.8,3.4-3.8c0.8-2,1.2-4.9,1.2-8.8V0.3h5.7V6z M77.8,9.6h-2.4
-		v4.8h2.4v4.8h-2.4v5.1h-6V0h6v4.8h2.4V9.6z"/>
-	<path d="M102.8,23.4H79.7v-4.8h23.1V23.4z M80.4,14.7V0.3h6v2.4h9.8V0.3h6v14.4H80.4z M96.2,7.5h-9.8v2.4h9.8V7.5z"/>
-</g>
-<ellipse class="st0" cx="51.4" cy="12.2" rx="19.9" ry="8"/>
-</svg>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 99.3 21.4" style="enable-background:new 0 0 99.3 21.4;" xml:space="preserve">
+       <g id="Layer_1">
+         <g>
+           <path d="M29.3,18.9c-2,2.7-7.6,4.2-13.5-2.3l-3.3-3.7l-2.8-3c-0.3-0.2-0.1-0.5,0.5-0.4c3.7,0.2,6.7-1.5,6.7-4.4c0-2.8-1.9-4-4.4-4
+             L7.1,1C6.7,1,6.2,1,6,1.1C2.2,1.2,0.1,3.4,0.4,6.6c0,0.1-0.2,0.3-0.3,0c-0.8-3.5,1.6-6.5,6.5-6.5h5.8c2.8,0,6.5,1.1,6.5,4.9
+             c0,2.3-2,4.6-4.9,5c-0.6,0.1-1.1,0.1-1.6,0.1l1.7,1.8l3.1,3.3c4.5,4.5,6.7,6,11.9,3.4C29.3,18.6,29.6,18.7,29.3,18.9z M10.3,17.4
+             c0,0.2-0.2,0.2-0.5,0.2H6.2c-0.3,0-0.5-0.1-0.5-0.3c0-0.1,0.1-0.2,0.3-0.2h1.3c0,0-0.6-0.1-0.7-1c0,0,0-1,0-2.5
+             c0-4.1,0-11.4,0-11.4c0-0.3,0-0.5-0.1-0.7h1.3c0,0,0.6,0.2,0.7,1c0,0.1,0,9.8,0,10.8v2.6c0,1.1,0.8,1.3,1.6,1.4
+             C10.3,17.3,10.3,17.4,10.3,17.4z"/>
+           <path d="M23.5,16.9c0-0.7,0.5-1.2,1.1-1.2c0.8-0.1,1.5,0.7,1.4,1.5c-0.1,0.6-0.6,1-1.2,1C24,18.2,23.5,17.6,23.5,16.9z"/>
+           <path d="M46,16c0,0.2-0.2,0.2-0.5,0.2h-4.1c-0.3,0-0.4,0-0.4-0.2c0-0.1,0-0.2,0.2-0.2h1.2c0,0-0.4-0.1-0.8-0.8
+             c0-0.1-0.5-1.4-1.2-3.2h-6.8l-0.4,1.1c-3.2,8.3-8.7,9.7-11.5,7.2c-0.3-0.3-0.1-0.3,0.1-0.3c4.7,1.6,7.4-1.7,10-7.5l2.7-6.7
+             c1.7-4.4,4.2-6.6,7-4.7c0.2,0.2,0.1,0.4-0.1,0.3c-0.8-0.4-1.4-0.5-2.1-0.2l-1.1,0.8c-0.1,0.1-0.2,0.2-0.3,0.3L43,13.3
+             c0.6,1.3,1.2,2.3,2.4,2.4C45.5,15.8,46,15.8,46,16z M40.3,11.1c-1.1-3.1-2.6-7-3-8.1c-0.4,0.6-0.7,1.3-1,2.2l-2.3,5.9H40.3z"/>
+         </g>
+       </g>
+       <g id="Layer_2">
+         <g>
+           <path d="M32.3,15.4c0,0.1-0.5,1.4-0.8,1.9c-0.2,0.2-0.6,0.5-1.8,0.4c-1.7,0-4.8-0.1-4.9-0.1c-0.3,0-1.1,0-1.7,0.1
+             c-0.2,0-0.4,0-0.4-0.1c0-0.1,0-0.1,0.1-0.1l1.2-0.1c0,0-0.5-0.1-0.6-0.8V5.8c0-0.7-0.7-1-1.1-1l-0.2,0C22,4.8,22,4.7,22,4.6
+             c0-0.1,0.2-0.1,0.4-0.1h8C31,4.5,31.2,5,31.2,5l0-0.6c0-0.1,0-0.2,0.2-0.2c0.2,0,0.2,0.1,0.2,0.4c0,0,0,2.1,0.1,2.3
+             c0,0.2,0,0.3-0.1,0.3c-0.1,0-0.2-0.1-0.2-0.3c-0.1-0.6-0.8-1.7-2-1.7c-1.6-0.1-3.1,0-4.8,0.1c0,0,0.5,0.1,0.6,0.8c0,0,0,2.3,0,4.6
+             c1.2,0,2.4,0,3.6,0c0.7,0,0.9,0.5,0.9,0.5l0-0.6c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.2,0.2,0.4c0,0,0,2.1,0,2.3
+             c0,0.2,0,0.3-0.1,0.3c-0.1,0-0.2-0.1-0.2-0.3c-0.1-0.6-0.7-1.7-2-1.8c-0.8-0.1-1.6-0.1-2.5-0.1c0,2.1,0,4,0,4
+             c0,1.2,0.2,1.7,1.8,1.8c0.1,0,2.3,0,2.9,0c0.4,0,0.8-0.1,1.3-0.5c0.4-0.3,0.8-0.9,0.9-1.2c0.1-0.2,0.1-0.2,0.2-0.2
+             C32.3,15.1,32.3,15.3,32.3,15.4z"/>
+           <path d="M50.9,4.7c0,0.1-0.1,0.2-0.2,0.2c-1.4,0-2.1,1.1-2.6,2L44,15.7c0,0-0.5,0.9-0.8,1.8c-0.1,0.2-0.2,0.2-0.3,0L37.7,6.9
+             c-0.7-1.4-0.9-1.7-2.6-2c-0.1,0-0.2-0.1-0.2-0.2s0.2-0.1,0.4-0.2h3.8c0.2,0,0.4,0.1,0.4,0.2c0,0.1,0,0.2-0.2,0.2h-1.1
+             c0,0,0.4,0.1,0.7,0.7c0.1,0.2,4.2,10,4.2,10s4.5-9.8,4.6-10c0.4-0.6,0.7-0.7,0.7-0.7h-1.1c-0.2,0-0.2-0.1-0.2-0.2
+             c0-0.1,0.2-0.2,0.4-0.2h3C50.8,4.6,50.9,4.6,50.9,4.7z"/>
+           <path d="M62.3,15.4c0,0.1-0.5,1.4-0.8,1.9c-0.2,0.2-0.6,0.5-1.8,0.4c-1.7,0-4.8-0.1-4.9-0.1c-0.3,0-1.1,0-1.7,0.1
+             c-0.2,0-0.4,0-0.4-0.1c0-0.1,0-0.1,0.1-0.1l1.2-0.1c0,0-0.5-0.1-0.6-0.8V5.9c0-0.7-0.7-1-1.1-1l-0.2,0C52,4.9,52,4.8,52,4.7
+             c0-0.1,0.2-0.1,0.4-0.1h8c0.7,0,0.9,0.5,0.9,0.5l0-0.6c0-0.1,0-0.2,0.2-0.2c0.2,0,0.2,0.1,0.2,0.4c0,0,0,2,0.1,2.3
+             c0,0.2,0,0.3-0.1,0.3c-0.1,0-0.2-0.1-0.2-0.3c-0.1-0.6-0.8-1.7-2-1.7c-1.6-0.1-3.1,0-4.8,0.1c0,0,0.5,0.1,0.6,0.8c0,0,0,2.3,0,4.6
+             c1.2,0,2.4,0,3.6,0c0.7,0,0.9,0.5,0.9,0.5l0-0.6c0-0.1,0.1-0.2,0.2-0.2c0.1,0,0.2,0.2,0.2,0.4c0,0,0,2,0,2.3c0,0.2,0,0.3-0.1,0.3
+             c-0.1,0-0.2-0.1-0.2-0.3c-0.1-0.6-0.7-1.7-2-1.8c-0.8-0.1-1.6-0.1-2.5-0.1c0,2,0,3.9,0,3.9c0,1.2,0.2,1.7,1.8,1.8
+             c0.1,0,2.3,0,2.9,0c0.4,0,0.8-0.1,1.3-0.5c0.4-0.3,0.8-0.9,0.9-1.2c0.1-0.2,0.1-0.2,0.2-0.2C62.3,15.2,62.3,15.3,62.3,15.4z"/>
+           <path d="M77.3,17.5c0,0.1-0.1,0.2-0.3,0.2h-0.9c-0.7,0-2.5,0-3.6-1.2c-1.1-1.3-2.8-3.5-5-4.5v0c-0.3-0.1-0.2-0.4,0.3-0.4
+             C71,11.7,73,10.4,73,8.3c0-2.1-1.6-3-3.7-3c0,0-0.9,0-1.1,0c-0.1,0-0.2,0-2.4,0.1c0,0,0.5,0.1,0.5,0.8c0,0.1,0,10.3,0,10.3
+             c0,0.8,0.7,0.9,1.4,1c0.2,0,0.2,0.1,0.2,0.2c0,0.1-0.2,0.1-0.4,0.1h-3.1c-0.3,0-0.4-0.1-0.4-0.2c0-0.1,0.1-0.2,0.3-0.2h1
+             c0,0-0.5-0.1-0.6-0.8c0,0,0-10.7,0-10.7c0-0.7-0.7-1-1.4-1c-0.2,0-0.2-0.1-0.2-0.2s0.2-0.1,0.4-0.1h5.6c2.4,0,5.4,0.8,5.4,3.7
+             c0,1.8-1.2,3.4-3.6,3.7c-0.5,0.1-0.9,0.1-1.4,0.1c1.7,0.9,4,3.3,5.1,4.4c0.3,0.4,1,0.8,1.9,0.8l0.2,0
+             C77.3,17.4,77.3,17.5,77.3,17.5z"/>
+         </g>
+         <g>
+           <path d="M33.2,16.8c1.8-0.5,2.1-0.9,2.6-2.6c0.5,1.8,0.9,2.1,2.6,2.6c-1.8,0.5-2.1,0.9-2.6,2.6C35.3,17.7,34.9,17.3,33.2,16.8z"/>
+         </g>
+         <path d="M29.3,18.9c-2.5,2.6-7.6,4.2-13.5-2.3l-3.3-3.7l-2.8-3c-0.3-0.2-0.1-0.5,0.5-0.4c3.7,0.2,6.7-1.5,6.7-4.4
+           c0-2.8-1.9-4-4.4-4L7.1,1C6.7,1,6.2,1,6,1.1C2.2,1.2,0.1,3.4,0.4,6.6c0,0.1-0.2,0.3-0.3,0c-0.8-3.5,1.6-6.5,6.5-6.5h5.8
+           c2.8,0,6.5,1.1,6.5,4.9c0,2.3-2,4.6-4.9,5c-0.6,0.1-1.1,0.1-1.6,0.1l1.7,1.8l3.1,3.3c4.5,4.5,8.4,6.3,11.9,3.4
+           C29.3,18.6,29.6,18.7,29.3,18.9z M10.3,17.4c0,0.2-0.2,0.2-0.5,0.2H6.2c-0.3,0-0.5-0.1-0.5-0.3c0-0.1,0.1-0.2,0.3-0.2h1.3
+           c0,0-0.6-0.1-0.7-1c0,0,0-1,0-2.5c0-4.1,0-11.4,0-11.4c0-0.3,0-0.5-0.1-0.7h1.3c0,0,0.6,0.2,0.7,1c0,0.1,0,9.8,0,10.8v2.6
+           c0,1.1,0.8,1.3,1.6,1.4C10.3,17.3,10.3,17.4,10.3,17.4z"/>
+         <path d="M95.8,16c0,0.2-0.2,0.2-0.5,0.2h-4.1c-0.3,0-0.4,0-0.4-0.2c0-0.1,0-0.2,0.2-0.2h1.2c0,0-0.4-0.1-0.8-0.8
+           c0-0.1-0.5-1.4-1.2-3.2h-6.8L83,12.8c-3.2,8.3-8.7,9.7-11.5,7.2c-0.3-0.3-0.1-0.3,0.1-0.3c4.7,1.6,7.4-1.7,10-7.5l2.7-6.7
+           c1.7-4.4,4.2-6.6,7-4.7c0.2,0.2,0.1,0.4-0.1,0.3c-0.8-0.4-1.4-0.5-2.1-0.2l-1.1,0.8C88,1.8,87.9,1.9,87.9,2l4.9,11.3
+           c0.6,1.3,1.2,2.3,2.4,2.4C95.3,15.8,95.8,15.8,95.8,16z M90.1,11.1c-1.1-3.1-2.6-7-3-8.1c-0.4,0.6-0.7,1.3-1,2.2l-2.3,5.9H90.1z"/>
+       </g>
+       </svg>
+       
+       
 
 
 
@@ -123,13 +178,21 @@
               <h3>Hey, I'm Johan Stanworth</h3>
               <p>Voluptatem sit minima et dignissimos earum fuga vel nulla quidem aut quam</p>
             </div>
-            <div class="col-lg-5 text-center text-lg-end">
+            <div id="toggle" class="col-lg-5 text-center text-lg-end">
               <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
+
+                <!-- <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-bodycare">App</li>
+                <li data-filter=".filter-haircare">Product</li>
+                <li data-filter=".filter-footcare">Branding</li>
+                <li data-filter=".filter-perfume">Books</li> -->
+                
+                <!-- <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-app">App</li>
                 <li data-filter=".filter-product">Product</li>
                 <li data-filter=".filter-branding">Branding</li>
-                <li data-filter=".filter-books">Books</li>
+                <li data-filter=".filter-books">Books</li> -->
+                
               </ul><!-- End Portfolio Filters -->
             </div>
           </div>
@@ -137,7 +200,7 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200"
             style="position: relative; height: 1344px;">
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bodycare"
               style="position: absolute; left: 0px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
@@ -154,7 +217,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bodycare"
               style="position: absolute; left: 440px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
@@ -172,7 +235,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-footcare"
               style="position: absolute; left: 880px; top: 0px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
@@ -190,7 +253,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-perfume"
               style="position: absolute; left: 0px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
@@ -207,7 +270,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-perfume"
               style="position: absolute; left: 440px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
@@ -224,7 +287,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-haircare"
               style="position: absolute; left: 880px; top: 336px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
@@ -242,7 +305,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-footcare"
               style="position: absolute; left: 0px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
@@ -260,7 +323,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-footcare"
               style="position: absolute; left: 440px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
@@ -277,7 +340,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-bodycare"
               style="position: absolute; left: 880px; top: 672px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
@@ -294,7 +357,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-haircare"
               style="position: absolute; left: 0px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
@@ -312,7 +375,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-footcare"
               style="position: absolute; left: 440px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
@@ -330,7 +393,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books"
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-perfume"
               style="position: absolute; left: 880px; top: 1008px;">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
@@ -669,7 +732,14 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
+
+
+    <!-- 유지보수 -->
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/bby.js"></script>
+
+
+      <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
 </body>
